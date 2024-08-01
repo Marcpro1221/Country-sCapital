@@ -25,7 +25,7 @@ const db = new pg.Client({
 });
 
 db.connect();
-db.query("SELECT * FROM capitals", (err, res)=>{
+db.query("SELECT * FROM capitals;", (err, res)=>{
   if(err){
     console.error("Error executing query", err.stack);
   }else{
